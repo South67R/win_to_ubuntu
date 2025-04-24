@@ -1,0 +1,2 @@
+tank_rocket
+-DCATKIN_DEVEL_PREFIX=/home/south/tank_rocket/devel -DCMAKE_INSTALL_PREFIX=/home/south/tank_rocket/install -G Unix Makefiles

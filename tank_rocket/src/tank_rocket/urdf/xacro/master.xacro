@@ -1,0 +1,19 @@
+<?xml version="1.0"?>
+<robot name="tank_rocket"
+  xmlns:xacro="http://www.ros.org/wiki/xacro">
+
+  <!-- Import model -->
+  <xacro:include filename="$(find tank_rocket)/urdf/xacro/model.xacro"/>
+  <xacro:model />
+
+  <!-- Import Gazebo settings -->
+  <xacro:include filename="$(find tank_rocket)/urdf/xacro/gazebo.xacro"/>
+  <xacro:gazebo />
+
+  <!-- Import GPS sensor -->
+  <xacro:include filename="$(find tank_rocket)/urdf/xacro/gps.xacro"/>
+  <xacro:sensor_gps prefix="gps" parent="base_link">
+    <origin xyz="0 0 0" rpy="0 0 0"/>
+  </xacro:sensor_gps>
+
+</robot>

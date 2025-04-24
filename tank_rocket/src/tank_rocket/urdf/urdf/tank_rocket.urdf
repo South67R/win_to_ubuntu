@@ -1,0 +1,204 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- This URDF was automatically created by SolidWorks to URDF Exporter! Originally created by Stephen Brawner (brawner@gmail.com) 
+     Commit Version: 1.6.0-4-g7f85cfe  Build Version: 1.6.7995.38578
+     For more information, please see http://wiki.ros.org/sw_urdf_exporter -->
+<robot name="tank_rocket">
+  <link name="base_link">
+    <inertial>
+      <origin xyz="-0.00861750035525078 1.29855654087783E-05 -0.0142636839736506" rpy="0 0 0" />
+      <mass value="4.6363793056219" />
+      <inertia ixx="0.00845760819479726" ixy="-4.14692026594335E-10" ixz="0.000979173377282238" iyy="0.0175509925437596" iyz="1.9027397639913E-10" izz="0.0230329110525293" />
+    </inertial>
+    <visual>
+      <origin xyz="0 0 0" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="package://tank_rocket/meshes/base_link.STL" />
+      </geometry>
+      <material name="">
+        <color rgba="0.776470588235294 0.756862745098039 0.737254901960784 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="0 0 0" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="package://tank_rocket/meshes/base_link.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <link name="right_front">
+    <inertial>
+      <origin xyz="-3.46944695195361E-17 -3.46944695195361E-17 0.0150066275369927" rpy="0 0 0" />
+      <mass value="0.16560407234294" />
+      <inertia ixx="2.27667842545529E-05" ixy="-1.14502982470056E-20" ixz="-2.02571919411905E-21" iyy="2.27667842545529E-05" iyz="7.60563347761972E-21" izz="2.44403723155893E-05" />
+    </inertial>
+    <visual>
+      <origin xyz="0 0 0" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="package://tank_rocket/meshes/right_front.STL" />
+      </geometry>
+      <material name="">
+        <color rgba="0.650980392156863 0.619607843137255 0.588235294117647 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="0 0 0" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="package://tank_rocket/meshes/right_front.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint name="joint_right_front" type="continuous">
+    <origin xyz="0.0625 -0.095 -0.06" rpy="-1.5708 0 0" />
+    <parent link="base_link" />
+    <child link="right_front" />
+    <axis xyz="0 0 1" />
+    <dynamics damping="0.1" friction="0.1" />
+  </joint>
+  <link name="right_back">
+    <inertial>
+      <origin xyz="4.16333634234434E-17 2.77555756156289E-17 0.0150066275369927" rpy="0 0 0" />
+      <mass value="0.165604072342939" />
+      <inertia ixx="2.27667842545528E-05" ixy="-7.58072090006464E-22" ixz="2.94292448702008E-21" iyy="2.27667842545528E-05" iyz="-9.07714738981472E-21" izz="2.44403723155892E-05" />
+    </inertial>
+    <visual>
+      <origin xyz="0 0 0" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="package://tank_rocket/meshes/right_back.STL" />
+      </geometry>
+      <material name="">
+        <color rgba="0.650980392156863 0.619607843137255 0.588235294117647 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="0 0 0" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="package://tank_rocket/meshes/right_back.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint name="joint_right_back" type="continuous">
+    <origin xyz="-0.0625 -0.095 -0.06" rpy="-1.5708 0 0" />
+    <parent link="base_link" />
+    <child link="right_back" />
+    <axis xyz="0 0 1" />
+    <dynamics damping="0.1" friction="0.1" />
+  </joint>
+  <link name="left_front">
+    <inertial>
+      <origin xyz="4.16333634234434E-17 -6.93889390390723E-18 -0.0150066275369927" rpy="0 0 0" />
+      <mass value="0.165604072342939" />
+      <inertia ixx="2.27667842545528E-05" ixy="3.74447022269006E-21" ixz="9.78577232821016E-22" iyy="2.27667842545528E-05" iyz="-8.94103392345316E-21" izz="2.44403723155892E-05" />
+    </inertial>
+    <visual>
+      <origin xyz="0 0 0" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="package://tank_rocket/meshes/left_front.STL" />
+      </geometry>
+      <material name="">
+        <color rgba="0.650980392156863 0.619607843137255 0.588235294117647 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="0 0 0" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="package://tank_rocket/meshes/left_front.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint name="joint_left_front" type="continuous">
+    <origin xyz="0.0625 0.095 -0.06" rpy="1.5708 0 3.1416" />
+    <parent link="base_link" />
+    <child link="left_front" />
+    <axis xyz="0 0 -1" />
+    <dynamics damping="0.1" friction="0.1" />
+  </joint>
+  <link name="left_back">
+    <inertial>
+      <origin xyz="1.38777878078145E-17 -4.16333634234434E-17 -0.0150066275369927" rpy="0 0 0" />
+      <mass value="0.16560407234294" />
+      <inertia ixx="2.27667842545529E-05" ixy="3.94636118775249E-21" ixz="8.31212273798784E-21" iyy="2.27667842545529E-05" iyz="-6.13633561409003E-21" izz="2.44403723155893E-05" />
+    </inertial>
+    <visual>
+      <origin xyz="0 0 0" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="package://tank_rocket/meshes/left_back.STL" />
+      </geometry>
+      <material name="">
+        <color rgba="0.650980392156863 0.619607843137255 0.588235294117647 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="0 0 0" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="package://tank_rocket/meshes/left_back.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint name="joint_left_back" type="continuous">
+    <origin xyz="-0.0625 0.095 -0.06" rpy="1.5708 0 -3.1416" />
+    <parent link="base_link" />
+    <child link="left_back" />
+    <axis xyz="0 0 -1" />
+    <dynamics damping="0.1" friction="0.1" />
+  </joint>
+  <link name="link_1">
+    <inertial>
+      <origin xyz="0 1.09089860798683E-18 0.0037283591579376" rpy="0 0 0" />
+      <mass value="0.0346715546726793" />
+      <inertia ixx="7.83541746270785E-06" ixy="1.15211976983859E-06" ixz="1.02699779856417E-21" iyy="3.9190603169816E-06" iyz="-5.0746058300653E-21" izz="9.78608502282707E-06" />
+    </inertial>
+    <visual>
+      <origin xyz="0 0 0" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="package://tank_rocket/meshes/link_1.STL" />
+      </geometry>
+      <material name="">
+        <color rgba="0.2 0.2 0.2 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="0 0 0" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="package://tank_rocket/meshes/link_1.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint name="joint_link_1" type="revolute">
+    <origin xyz="-0.065 0 0.03022" rpy="0 0 0" />
+    <parent link="base_link" />
+    <child link="link_1" />
+    <axis xyz="0 0 1" />
+    <limit lower="0" upper="0" effort="0" velocity="0" />
+    <dynamics damping="0.1" friction="0.1" />
+  </joint>
+  <link name="link_2">
+    <inertial>
+      <origin xyz="0.071859215008466 0.00287771739348583 -1.1450180127659E-07" rpy="0 0 0" />
+      <mass value="0.703698863575116" />
+      <inertia ixx="0.000480637661391646" ixy="-0.000150917007586167" ixz="6.19332343656381E-11" iyy="0.000349941832315033" iyz="1.37419458679042E-10" izz="0.000569725193513414" />
+    </inertial>
+    <visual>
+      <origin xyz="0 0 0" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="package://tank_rocket/meshes/link_2.STL" />
+      </geometry>
+      <material name="">
+        <color rgba="0.650980392156863 0.619607843137255 0.588235294117647 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="0 0 0" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="package://tank_rocket/meshes/link_2.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint name="joint_link_2" type="revolute">
+    <origin xyz="0 0 0" rpy="1.5708 -0.80857 -2.8757" />
+    <parent link="link_1" />
+    <child link="link_2" />
+    <axis xyz="0 0 1" />
+    <limit lower="0" upper="0" effort="0" velocity="0" />
+    <dynamics damping="0.1" friction="0.1" />
+  </joint>
+</robot>
