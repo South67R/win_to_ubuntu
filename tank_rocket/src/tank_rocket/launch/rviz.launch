@@ -2,7 +2,7 @@
 
   <arg name="model" default="$(find tank_rocket)/urdf/xacro/master.xacro"/>
   <arg name="gui" default="true" />
-  <arg name="rvizconfig" default="$(find tank_rocket)/rviz/test_wheel.rviz" />
+  <arg name="rvizconfig" default="$(find tank_rocket)/rviz/tank_rocket.rviz" />
 
   <param name="robot_description" command="$(find xacro)/xacro $(arg model)" />
 
