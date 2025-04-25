@@ -12,8 +12,8 @@ a  s  d
 
 CTRL-C to quit
 """
-speed_linear = 0.5
-speed_angular = 1.0
+speed_linear = 1
+speed_angular = 1.5
 
 def getKey():
     tty.setraw(sys.stdin.fileno())

@@ -61,6 +61,10 @@ Visualization Manager:
         Expand Link Details: false
         Expand Tree: false
         Link Tree Style: Links in Alphabetic Order
+        base_footprint:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
         base_link:
           Alpha: 1
           Show Axes: false
@@ -146,6 +150,7 @@ Visualization Manager:
       Visibility:
         Grid: true
         LaserScan: true
+        Map: true
         RobotModel: true
         Value: true
       Zoom Factor: 1
@@ -176,6 +181,16 @@ Visualization Manager:
       Unreliable: false
       Use Fixed Frame: true
       Use rainbow: true
+      Value: true
+    - Alpha: 0.699999988079071
+      Class: rviz/Map
+      Color Scheme: map
+      Draw Behind: false
+      Enabled: true
+      Name: Map
+      Topic: ""
+      Unreliable: false
+      Use Timestamp: false
       Value: true
   Enabled: true
   Global Options:

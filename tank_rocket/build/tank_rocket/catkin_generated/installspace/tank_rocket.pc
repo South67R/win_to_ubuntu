@@ -5,4 +5,4 @@ Description: Description of tank_rocket
 Version: 0.0.1
 Cflags: 
 Libs: -L${prefix}/lib 
-Requires: 
+Requires: gmapping map_server

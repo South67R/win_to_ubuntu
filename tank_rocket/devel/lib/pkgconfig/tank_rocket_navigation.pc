@@ -1,0 +1,8 @@
+prefix=/home/south/tank_rocket/devel
+
+Name: tank_rocket_navigation
+Description: Description of tank_rocket_navigation
+Version: 0.0.0
+Cflags: 
+Libs: -L${prefix}/lib 
+Requires: 

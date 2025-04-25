@@ -7,7 +7,6 @@
   <maintainer email="you@example.com">Your Name</maintainer>
   <license>MIT</license>
 
-  <!-- Các dependency cần thiết -->
   <buildtool_depend>catkin</buildtool_depend>
   <build_depend>roscpp</build_depend>
   <build_depend>std_msgs</build_depend>
@@ -17,7 +16,8 @@
   <build_depend>gazebo_ros</build_depend>
   <build_depend>joint_state_publisher</build_depend>
   <build_depend>robot_state_publisher</build_depend>
-
+  <depend>gmapping</depend>
+  <depend>map_server</depend>
   <exec_depend>roscpp</exec_depend>
   <exec_depend>std_msgs</exec_depend>
   <exec_depend>sensor_msgs</exec_depend>
@@ -26,8 +26,7 @@
   <exec_depend>gazebo_ros</exec_depend>
   <exec_depend>joint_state_publisher</exec_depend>
   <exec_depend>robot_state_publisher</exec_depend>
-  
-  <!-- teleop_twist_keyboard (nếu dùng gói sẵn) -->
+
   <exec_depend>teleop_twist_keyboard</exec_depend>
 
 </package>

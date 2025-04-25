@@ -1,6 +1,6 @@
 <launch>
-    <!-- Set world -->
-    <arg name="world_file" default="$(find tank_rocket)/worlds/map_1.world" />
+
+    <arg name="world_file" default="$(find tank_rocket)/worlds/map_2.world" />
     <include file="$(find gazebo_ros)/launch/empty_world.launch">
         <arg name="world_name" value="$(arg world_file)" />
         <arg name="use_sim_time" value="true" />
@@ -19,5 +19,4 @@
 
     <node pkg="joint_state_publisher" type="joint_state_publisher" name="joint_state_publisher" />
 
-    <!-- <node name="rviz" pkg="rviz" type="rviz" args="-d $(find tank_rocket)/rviz/tank_rocket.rviz" /> -->
 </launch>

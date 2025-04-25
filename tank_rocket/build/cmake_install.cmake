@@ -131,6 +131,7 @@ endif()
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for each subdirectory.
   include("/home/south/tank_rocket/build/gtest/cmake_install.cmake")
+  include("/home/south/tank_rocket/build/tank_rocket_navigation/cmake_install.cmake")
   include("/home/south/tank_rocket/build/tank_rocket/cmake_install.cmake")
 
 endif()

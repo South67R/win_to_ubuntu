@@ -10,15 +10,20 @@ find_package(catkin REQUIRED COMPONENTS
   gazebo_ros
   joint_state_publisher
   robot_state_publisher
+  nav_msgs 
+  tf2_ros
+  gmapping
+  map_server
 )
 
-catkin_package()
+catkin_package(
+  CATKIN_DEPENDS 
+  gmapping 
+  map_server
+)
 
 include_directories(
   ${catkin_INCLUDE_DIRS}
 )
 
-# Nếu có script python, có thể cài đặt như sau (tuỳ chọn):
-# catkin_install_python(PROGRAMS scripts/control_keyboard.py
-#   DESTINATION ${CATKIN_PACKAGE_BIN_DESTINATION}
-# )
+
