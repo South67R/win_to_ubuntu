@@ -23,6 +23,26 @@ Mở 1 terminal
 ```bash
   git clone https://github.com/South67R/win_to_ubuntu.git
 ```
+Hãy cài đặt các package phù hợp để có thể sử dụng
+
+```bash
+  sudo apt-get install ros-noetic-joy \
+  ros-noetic-teleop-twist-joy \
+  ros-noetic-teleop-twist-keyboard \
+  ros-noetic-amcl \
+  ros-noetic-map-server \
+  ros-noetic-move-base \
+  ros-noetic-urdf \
+  ros-noetic-xacro \
+  ros-noetic-rqt-image-view \
+  ros-noetic-gmapping \
+  ros-noetic-navigation \
+  ros-noetic-joint-state-publisher \
+  ros-noetic-robot-state-publisher \
+  ros-noetic-slam-gmapping \
+  ros-noetic-dwa-local-planner \
+  ros-noetic-joint-state-publisher-gui
+```
 
 
 ```bash
