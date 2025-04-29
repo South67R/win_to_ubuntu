@@ -87,3 +87,6 @@ Chạy file Navigation
 ```bash
   roslaunch tank_rocket_navigation tank_rocket_navigation.launch 
 ```
+Giờ hãy chọn vào 2D Nav Goal trên tranh công cụ Rviz để xác định điểm muốn tới.
+
+# Cảm ơn đã xem !!!
